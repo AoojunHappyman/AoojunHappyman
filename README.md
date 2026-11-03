@@ -25,7 +25,7 @@
 ```text
 $ whoami
 
-name      = Aoojun
+name      = "Pattanachai Sawetbunchoed (Aoojun)"
 focus     = data-driven web apps, dashboards & geospatial interfaces
 education = Digital Science & Technology · Mahidol University
 location  = Bangkok, Thailand
