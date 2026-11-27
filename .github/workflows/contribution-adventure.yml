@@ -1,4 +1,4 @@
-name: Update contribution snake
+name: Update contribution adventure
 
 on:
   schedule:
@@ -21,20 +21,18 @@ jobs:
         with:
           ref: main
 
-      - name: Generate light and dark snake SVGs
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
-        with:
-          github_user_name: AoojunHappyman
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+      - name: Install pinned image dependency
+        run: python3 -m pip install --disable-pip-version-check -r scripts/requirements.txt
 
-      - name: Commit generated SVGs
+      - name: Generate the pixel-art contribution adventure
+        run: python3 scripts/generate_contribution_adventure.py
+
+      - name: Commit generated adventure assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- dist/
+          git add -- assets/contribution-adventure-sprites.png dist/contribution-adventure.gif
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update contribution snake"
+            git commit -m "chore: update contribution adventure"
             git push
           fi

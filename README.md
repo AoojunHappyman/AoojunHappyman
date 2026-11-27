@@ -109,14 +109,10 @@ I build practical web projects that turn data into clearer tools and experiences
   <img src="./dist/activity-graph.svg" alt="GitHub contribution activity graph" width="100%" />
 </div>
 
-## 🐍 Watch My Contributions Get Eaten
+## 🍄 My Contribution Adventure
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dist/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./dist/github-snake.svg" />
-    <img src="./dist/github-snake.svg" alt="Snake animation moving through the GitHub contribution grid" width="100%" />
-  </picture>
+  <img src="./dist/contribution-adventure.gif" alt="Original pixel-art adventurer running, jumping and collecting coins across my real GitHub contribution calendar" width="100%" />
 </div>
 
 ---
