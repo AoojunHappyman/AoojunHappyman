@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 USERNAME = "AoojunHappyman"
-PROFILE_CALENDAR_URL = f"https://github.com/users/{USERNAME}/contributions"
+PROFILE_CALENDAR_URL = f"https://github.com/users/{USERNAME}/contributions?include_private=true"
 WIDTH = 1080
 HEIGHT = 348
 CELL = 12
